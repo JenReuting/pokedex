@@ -20,7 +20,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         {/* <Pokedex cardData = {POKEMON}/> */}
-      <Pokegame cardData = {POKEMON}/>
+      <Pokegame pokeData = {POKEMON}/>
        
       </header>
     </div>
