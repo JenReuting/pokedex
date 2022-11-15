@@ -1,4 +1,5 @@
-import Pokedex from './Pokedex.js';
+
+import Pokegame from './Pokegame.js';
 import './App.css';
 
 const POKEMON = [
@@ -18,7 +19,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Pokedex cards={POKEMON} />
+        {/* <Pokedex cardData = {POKEMON}/> */}
+      <Pokegame cardData = {POKEMON}/>
+       
       </header>
     </div>
   );
@@ -27,3 +30,4 @@ function App() {
 
 
 export default App;
+
