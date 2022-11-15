@@ -1,7 +1,12 @@
 import Pokecard from './Pokecard.js';
 
-function Pokedex(cards) {
-  return ( cards.map(card => {
+/**
+ * Accepts an array of card objects.
+ * 
+ * Returns card html for each object
+ */
+function Pokedex({ cards }) {
+  return (cards.map(card => {
     return Pokecard(card);
   }))
 }

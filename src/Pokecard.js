@@ -1,12 +1,16 @@
-
-function Pokecard({id, type, name}) {
+/**
+ * Accepts an id, type, and name for a pokemon
+ * 
+ * Returns html containing that information for an individual card
+ */
+function Pokecard({ id, type, name }) {
   const img = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`
   return (
-  <div className="card">
-    <p class="card-name">{name}</p>
-    <img class="card-image" src={img} alt="pokemon card"></img>
-    <p class="card-type">{type}</p>
-  </div>
+    <div className="Pokecard">
+      <p className="Pokecard-name">{name}</p>
+      <img className="Pokecard-image" src={img} alt="pokemon card"></img>
+      <p className="Pokecard-type">Type: {type}</p>
+    </div>
   )
 }
 
